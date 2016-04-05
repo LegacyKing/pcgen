@@ -1,0 +1,28 @@
+
+
+# Set this value to 1000 w/ Priority 1 so we do not Prematurely drop MaxDex when Armor is not present
+MODIFYOTHER:EQUIPMENT|GROUP=Armor|Eq_MaxDex|SET|1000|PRIORITY=1
+
+
+
+
+# Set this value to 1000 w/ Priority 1
+#MODIFY:PC_MaxDex|MAX|0,input(STAT,"DEX",Mod)|PRIORITY=1
+
+# Rules for Encumbrance
+#MODIFY:PC_MaxDex|SET|if(Encumbrance==Medium,min(3,value()),value())+if(Encumbrance==Heavy,min(1,value()),value())+if(Encumbrance==Overloaded,0,value())
+
+#MODIFY:Encumbrance|SET|If(LoadScore<=LightEncumbrance,Light,)+If(LoadScore>LightEncumbrance||LoadScore<=MediumEncumbrance,Medium,)+If(LoadScore>MediumEncumbrance||LoadScore<=HeavyEncumbrance,Heavy,)+If(LoadScore=>OverloadEncumbrance,Overload,)
+
+# This formula takes the minimal value of PC MaxDex or Eq_MaxDex
+#MODIFY:MaxDex|MIN|Eq_MaxDex,PC_MaxDex
+
+
+# Not Operational
+#MODIFY:BaseEncumbrance|SET|lookup(Encumbrance Chart,LoadScore,MaxWeight)
+
+
+MODIFY:LightEncumbrance|SET|BaseEncumbrance/3
+MODIFY:MediumEncumbrance|SET|(BaseEncumbrance*2)/3
+MODIFY:HeavyEncumbrance|SET|BaseEncumbrance
+MODIFY:OverloadEncumbrance|SET|BaseEncumbrance+1

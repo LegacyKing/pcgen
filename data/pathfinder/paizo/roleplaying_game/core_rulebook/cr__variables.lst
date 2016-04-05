@@ -1,0 +1,21 @@
+
+
+# Masterwork is assigned to all heads
+LOCAL:EQUIPMENT|BOOLEAN=IsMasterwork
+
+LOCAL:EQUIPMENT|BOOLEAN=IsMetal
+LOCAL:EQUIPMENT|BOOLEAN=IsNonMetal
+LOCAL:EQUIPMENT|NUMBER=Eq_MaxDex
+
+# These all tie-in with MaxDex setting (This will require that lookup chart)
+GLOBAL:STRING=Encumbrance
+GLOBAL:NUMBER=LoadScore
+
+GLOBAL:NUMBER=BaseEncumbrance			EXPLANATION:Gets value from Look up table
+GLOBAL:NUMBER=LightEncumbrance		EXPLANATION:/3 of Base
+GLOBAL:NUMBER=MediumEncumbrance		EXPLANATION:/2 of Base
+GLOBAL:NUMBER=HeavyEncumbrance		EXPLANATION:Base
+GLOBAL:NUMBER=OverloadEncumbrance		EXPLANATION:Base +1
+
+
+
