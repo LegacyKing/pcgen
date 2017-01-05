@@ -7,9 +7,10 @@ LOCAL:EQUIPMENT|BOOLEAN=IsMetal
 LOCAL:EQUIPMENT|BOOLEAN=IsNonMetal
 LOCAL:EQUIPMENT|NUMBER=Eq_MaxDex
 
-# These all tie-in with MaxDex setting (This will require that lookup chart)
+# These all tie-in with Eq_MaxDex setting (This will require that lookup chart)
 GLOBAL:STRING=Encumbrance
 GLOBAL:NUMBER=LoadScore
+GLOBAL:NUMBER=MaxDex
 
 GLOBAL:NUMBER=BaseEncumbrance			EXPLANATION:Gets value from Look up table
 GLOBAL:NUMBER=LightEncumbrance		EXPLANATION:/3 of Base
