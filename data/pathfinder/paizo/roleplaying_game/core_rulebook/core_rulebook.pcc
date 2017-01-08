@@ -48,6 +48,7 @@ PCC:@/pathfinder/paizo/roleplaying_game/core_essentials/_core_essentials.pcc
 DATACONTROL:cr__datacontrols.lst
 VARIABLE:cr__variables.lst
 GLOBALMODIFIER:cr__globalmodifiers.lst
+DATATABLE:cr__datatables.lst
 
 ### GM Moved
 ALIGNMENT:cr__align.lst

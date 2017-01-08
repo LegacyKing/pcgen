@@ -1,5 +1,12 @@
 
 
+
+
+
+
+
+
+
 # Set this value to 1000 w/ Priority 1 so we do not Prematurely drop Eq_MaxDex when Armor is not present
 MODIFYOTHER:EQUIPMENT|GROUP=Armor|Eq_MaxDex|SET|1000|PRIORITY=1
 
@@ -7,22 +14,41 @@ MODIFYOTHER:EQUIPMENT|GROUP=Armor|Eq_MaxDex|SET|1000|PRIORITY=1
 
 
 # Set this value to 1000 w/ Priority 1
-MODIFY:PC_MaxDex|MAX|0,input(STAT,"DEX",Mod)|PRIORITY=1
+MODIFY:PC_MaxDex|SET|if(input(STAT,"DEX",Mod)<=0,0,input(STAT,"DEX",Mod))|PRIORITY=1
 
 # Rules for Encumbrance
-MODIFY:PC_MaxDex|SET|if(Encumbrance==Medium,min(3,value()),value())+if(Encumbrance==Heavy,min(1,value()),value())+if(Encumbrance==Overloaded,0,value())
+MODIFY:PC_MaxDex|SET|if(Encumbrance==Medium,min(3,value()))+if(Encumbrance==Heavy,min(1,value()))+if(Encumbrance==Overloaded,0,value())|PRIORITY=1000
 
-MODIFY:Encumbrance|SET|If(LoadScore<=LightEncumbrance,Light,)+If(LoadScore>LightEncumbrance||LoadScore<=MediumEncumbrance,Medium,)+If(LoadScore>MediumEncumbrance||LoadScore<=HeavyEncumbrance,Heavy,)+If(LoadScore=>OverloadEncumbrance,Overload,)
+MODIFY:Encumbrance|SET|If(BaseEncumbrance<=LightEncumbrance,Light,)+If(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,Medium,)+If(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,Heavy,)+If(BaseEncumbrance>=OverloadEncumbrance,Overload)
 
 # This formula takes the minimal value of PC Eq_MaxDex or Eq_MaxDex
 MODIFY:Eq_MaxDex|MIN|Eq_MaxDex,PC_MaxDex
 
 
-# Not Operational
-#MODIFY:BaseEncumbrance|SET|lookup(Encumbrance Chart,LoadScore,MaxWeight)
+# 
+MODIFY:SizeMult|SET|1|PRIORITY=50
+MODIFY:BaseEncumbrance|SET|lookup("Carrying Capacity",StrScore,Capacity)*SizeMult|PRIORITY=50
+MODIFY:BaseEncumbrance|MULTIPLY|if(Legs>=4,4,1)|PRIORITY=100
+
+
 
 
 MODIFY:LightEncumbrance|SET|BaseEncumbrance/3
 MODIFY:MediumEncumbrance|SET|(BaseEncumbrance*2)/3
 MODIFY:HeavyEncumbrance|SET|BaseEncumbrance
 MODIFY:OverloadEncumbrance|SET|BaseEncumbrance+1
+
+
+#MODIFY:EncumbracePenalty|SET|if(TotalWeight
+
+# SIZENAME:F	MODIFY:SizeMult|SET|0.125|PRIORITY=100
+# SIZENAME:D	MODIFY:SizeMult|SET|0.25|PRIORITY=100
+# SIZENAME:T	MODIFY:SizeMult|SET|0.5|PRIORITY=100
+# SIZENAME:S	MODIFY:SizeMult|SET|0.75|PRIORITY=100
+# SIZENAME:M	MODIFY:SizeMult|SET|1
+# SIZENAME:L	MODIFY:SizeMult|SET|2|PRIORITY=100
+# SIZENAME:H	MODIFY:SizeMult|SET|4|PRIORITY=100
+# SIZENAME:G	MODIFY:SizeMult|SET|8|PRIORITY=100
+# SIZENAME:C	MODIFY:SizeMult|SET|16|PRIORITY=100
+
+
