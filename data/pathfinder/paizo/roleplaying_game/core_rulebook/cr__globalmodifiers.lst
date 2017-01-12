@@ -1,31 +1,35 @@
 
-
-
-
-
-
-
+MODIFY:AC_Score|SET|MaxDex
 
 
 # Set this value to 1000 w/ Priority 1 so we do not Prematurely drop Eq_MaxDex when Armor is not present
-MODIFYOTHER:EQUIPMENT|GROUP=Armor|Eq_MaxDex|SET|1000|PRIORITY=1
+MODIFY:Eq_MaxDex|SET|1000|PRIORITY=1
 
 
 
 
-# Set this value to 1000 w/ Priority 1
-MODIFY:PC_MaxDex|SET|if(input(STAT,"DEX",Mod)<=0,0,input(STAT,"DEX",Mod))|PRIORITY=1
+# 
+MODIFY:PC_MaxDex|SET|Dex|PRIORITY=1
+
+MODIFY:MediumEncumbrancePenalty|SET|min(3,Dex)
+MODIFY:HeavyEncumbrancePenalty|SET|min(1,Dex)
+
+
+
+
 
 # Rules for Encumbrance
-MODIFY:PC_MaxDex|SET|if(Encumbrance==Medium,min(3,value()))+if(Encumbrance==Heavy,min(1,value()))+if(Encumbrance==Overloaded,0,value())|PRIORITY=1000
-
 MODIFY:Encumbrance|SET|"Light"
 MODIFY:Encumbrance|SET|if(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,"Medium",value())
 MODIFY:Encumbrance|SET|if(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,"Heavy",value())
 MODIFY:Encumbrance|SET|if(BaseEncumbrance>=OverloadEncumbrance,"Overload",value())
 
+
+MODIFY:PC_MaxDex|SET|if(Encumbrance==("Medium"),MediumEncumbrancePenalty,value())+if(Encumbrance==("Heavy"),HeavyEncumbrancePenalty,value())+if(Encumbrance==("Overloaded"),0,value())|PRIORITY=1000
+
+
 # This formula takes the minimal value of PC Eq_MaxDex or Eq_MaxDex
-MODIFY:Eq_MaxDex|MIN|Eq_MaxDex,PC_MaxDex
+MODIFY:MaxDex|SET|min(Eq_MaxDex,PC_MaxDex)
 
 
 # 

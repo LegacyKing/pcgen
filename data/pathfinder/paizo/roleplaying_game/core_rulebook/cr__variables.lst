@@ -21,6 +21,9 @@ GLOBAL:NUMBER=CHASCORE
 GLOBAL:NUMBER=LoadScore
 
 
+GLOBAL:NUMBER=AC_Score
+
+
 # Masterwork is assigned to all heads
 LOCAL:EQUIPMENT|BOOLEAN=IsMasterwork
 
@@ -29,7 +32,9 @@ LOCAL:EQUIPMENT|BOOLEAN=IsNonMetal
 
 
 # Armor & Shields
-LOCAL:EQUIPMENT|NUMBER=Eq_MaxDex
+GLOBAL:NUMBER=Eq_MaxDex
+
+
 LOCAL:EQUIPMENT|NUMBER=Eq_ArmorCheckPenalty
 
 
@@ -46,7 +51,6 @@ GLOBAL:NUMBER=EQ_Weight
 
 # These all tie-in with Eq_MaxDex setting (This will require that lookup chart)
 GLOBAL:STRING=Encumbrance
-GLOBAL:NUMBER=LoadScore
 GLOBAL:NUMBER=MaxDex
 GLOBAL:NUMBER=SizeMult				EXPLANATION:Set by the SizeMult
 
@@ -55,6 +59,8 @@ GLOBAL:NUMBER=LightEncumbrance		EXPLANATION:/3 of Base
 GLOBAL:NUMBER=MediumEncumbrance		EXPLANATION:/2 of Base
 GLOBAL:NUMBER=HeavyEncumbrance		EXPLANATION:Base
 GLOBAL:NUMBER=OverloadEncumbrance		EXPLANATION:Base +1
+GLOBAL:NUMBER=MediumEncumbrancePenalty
+GLOBAL:NUMBER=HeavyEncumbrancePenalty
 
 GLOBAL:NUMBER=Legs
 
@@ -67,7 +73,7 @@ GLOBAL:NUMBER=FighterLVL
 GLOBAL:NUMBER=ArmorTrainingTier
 GLOBAL:NUMBER=ArmorTrainingLVL
 
-
-
-
+###Block: Datatables
+GLOBAL:NUMBER=Capacity
+GLOBAL:NUMBER=LoadScore
 
