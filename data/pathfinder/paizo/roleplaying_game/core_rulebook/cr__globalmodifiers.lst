@@ -19,13 +19,13 @@ MODIFY:HeavyEncumbrancePenalty|SET|min(1,Dex)
 
 
 # Rules for Encumbrance
-MODIFY:Encumbrance|SET|"Light"
-MODIFY:Encumbrance|SET|if(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,"Medium",value())
-MODIFY:Encumbrance|SET|if(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,"Heavy",value())
-MODIFY:Encumbrance|SET|if(BaseEncumbrance>=OverloadEncumbrance,"Overload",value())
+#	MODIFY:Encumbrance|SET|"Light"
+#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,"Medium",value())
+#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,"Heavy",value())
+#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>=OverloadEncumbrance,"Overload",value())
 
 
-MODIFY:PC_MaxDex|SET|if(Encumbrance==("Medium"),MediumEncumbrancePenalty,value())+if(Encumbrance==("Heavy"),HeavyEncumbrancePenalty,value())+if(Encumbrance==("Overloaded"),0,value())|PRIORITY=1000
+#	MODIFY:PC_MaxDex|SET|if(Encumbrance==("Medium"),MediumEncumbrancePenalty,value())+if(Encumbrance==("Heavy"),HeavyEncumbrancePenalty,value())+if(Encumbrance==("Overloaded"),0,value())|PRIORITY=1000
 
 
 # This formula takes the minimal value of PC Eq_MaxDex or Eq_MaxDex
@@ -34,7 +34,8 @@ MODIFY:MaxDex|SET|min(Eq_MaxDex,PC_MaxDex)
 
 # 
 MODIFY:SizeMult|SET|1|PRIORITY=50
-MODIFY:BaseEncumbrance|SET|lookup("Carrying Capacity",LoadScore,Capacity)*SizeMult|PRIORITY=50
+
+MODIFY:BaseEncumbrance|SET|if(LoadScore>29,4*floor((LoadScore-20)/10),1)*lookup("TABLE[NUMBER,NUMBER]","Carrying Capacity",if(LoadScore>29,(LoadScore%10)+20,LoadScore),"Capacity")*SizeMult|PRIORITY=50
 MODIFY:BaseEncumbrance|MULTIPLY|if(Legs>=4,4,1)|PRIORITY=100
 
 
