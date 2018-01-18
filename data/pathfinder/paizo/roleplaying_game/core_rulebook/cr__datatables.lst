@@ -43,6 +43,20 @@ NUMBER,NUMBER
 29,1400
 ENDTABLE:Carrying Capacity,
 
+# TODO: if code ever adds a "N/A" capability it should be used instead of the '1000' for Max Dex on Light Row
+STARTTABLE:Carrying Loads,
+Load,Check Penalty,Max Dex,Speed Type
+STRING,NUMBER,NUMBER,STRING
+Light,0,1000,Base
+Medium,-3,3,Reduced
+Heavy,-6,1,Reduced
+Overload,-6,0,Overburdened
+ENDTABLE:Carrying Loads,
+
+
+
+
+
 
 # New Table
 # STARTTABLE:Wizard Casting Table,

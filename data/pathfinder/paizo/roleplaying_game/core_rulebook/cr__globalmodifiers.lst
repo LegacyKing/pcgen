@@ -2,34 +2,49 @@
 MODIFY:AC_Score|SET|MaxDex
 
 
-# Set this value to 1000 w/ Priority 1 so we do not Prematurely drop Eq_MaxDex when Armor is not present
-MODIFY:Eq_MaxDex|SET|1000|PRIORITY=1
 
 
 
 
 # 
-MODIFY:PC_MaxDex|SET|Dex|PRIORITY=1
+# MODIFY:PC_MaxDex|SET|Dex|PRIORITY=1
+# Set this value to 1000 w/ Priority 1 so we do not Prematurely drop Eq_MaxDex when Armor is not present
+# MODIFY:Eq_MaxDex|SET|1000|PRIORITY=1
+# MODIFY:MediumEncumbrancePenalty|SET|min(3,Dex)
+# MODIFY:HeavyEncumbrancePenalty|SET|min(1,Dex)
 
-MODIFY:MediumEncumbrancePenalty|SET|min(3,Dex)
-MODIFY:HeavyEncumbrancePenalty|SET|min(1,Dex)
+# Tom
+MODIFY:MaxDexBonusToAC|SET|Dex|PRIORITY=50
 
+MODIFY:MaxDexBonusToAC|MIN|lookup(...)|PRIORITY=100
 
-
+# Global Var getting Equipment Var
+MODIFY:MaxDexBonusToAC|MIN|MaximumDexBonus
 
 
 # Rules for Encumbrance
-#	MODIFY:Encumbrance|SET|"Light"
-#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,"Medium",value())
-#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,"Heavy",value())
-#	MODIFY:Encumbrance|SET|if(BaseEncumbrance>=OverloadEncumbrance,"Overload",value())
+MODIFY:Load|SET|"Light"
+MODIFY:Load|SET|if(BaseEncumbrance>LightEncumbrance||BaseEncumbrance<=MediumEncumbrance,"Medium",value())
+MODIFY:Load|SET|if(BaseEncumbrance>MediumEncumbrance||BaseEncumbrance<=HeavyEncumbrance,"Heavy",value())
+MODIFY:Load|SET|if(BaseEncumbrance>=OverloadEncumbrance,"Overload",value())
 
+# A-Replace - Requires Tom's Modify Code
+# MODIFY:Speed|SET|if(lookup(get("TABLE[STRING,STRING]","Carrying Loads"),Load,get("COLUMN[STRING]","Speed Type")=="Reduced"&&if(dropIntoContext(get("ARMORTYPE",ArmorType),SpeedType)=="Reduced",ceil((movement/5)*2/3)*5,value())|PRIORITY=1000001
+
+
+MODIFY:Speed|SET|if(lookup(get("TABLE[STRING,STRING]","Carrying Loads"),Load,get("COLUMN[STRING]","Speed Type")=="Overburdened",0,value())|PRIORITY=1000002
+
+# This
+MODIFY:Speed|SET|if(lookup(get("TABLE[STRING,STRING]","Carrying Loads"),Load,get("COLUMN[STRING]","Speed Type")=="Reduced",ceil((movement/5)*2/3)*5,value())|PRIORITY=1000001
+# and
+MODIFY:Speed|SET|if(dropIntoContext(get("ARMORTYPE",ArmorType),SpeedType)=="Reduced",ceil((movement/5)*2/3)*5,value())|PRIORITY=1000
+# Will be replaced by #A-Replace
 
 #	MODIFY:PC_MaxDex|SET|if(Encumbrance==("Medium"),MediumEncumbrancePenalty,value())+if(Encumbrance==("Heavy"),HeavyEncumbrancePenalty,value())+if(Encumbrance==("Overloaded"),0,value())|PRIORITY=1000
 
 
 # This formula takes the minimal value of PC Eq_MaxDex or Eq_MaxDex
-MODIFY:MaxDex|SET|min(Eq_MaxDex,PC_MaxDex)
+# MODIFY:MaxDex|SET|min(Eq_MaxDex,PC_MaxDex)
 
 
 # 

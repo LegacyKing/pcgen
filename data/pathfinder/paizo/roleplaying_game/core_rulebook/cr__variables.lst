@@ -50,7 +50,7 @@ GLOBAL:NUMBER=EQ_Weight
 
 
 # These all tie-in with Eq_MaxDex setting (This will require that lookup chart)
-GLOBAL:STRING=Encumbrance
+GLOBAL:STRING=Load
 GLOBAL:NUMBER=MaxDex
 GLOBAL:NUMBER=SizeMult				EXPLANATION:Set by the SizeMult
 
