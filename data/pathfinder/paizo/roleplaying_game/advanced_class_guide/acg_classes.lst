@@ -45,7 +45,7 @@ CLASS:Bloodrager	SPELLSTAT:CHA	MEMORIZE:NO	BONUS:CASTERLEVEL|Bloodrager|Caster_L
 1	ABILITY:Class|AUTOMATIC|Bloodrager
 ###Block: Level Progression
 1	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Weapon and Armor Proficiency
-1	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Bloodline|PREVAREQ:Bloodrager_CF_Bloodline,0
+1	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Standard Bloodline|PREVAREQ:Bloodrager_CF_Bloodline,0
 1	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Bloodrage|PREVAREQ:Bloodrager_CF_Bloodrage,0
 1	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Fast Movement|PREVAREQ:Bloodrager_CF_FastMovement,0
 2	ABILITY:Bloodrager Class Feature|AUTOMATIC|Bloodrager ~ Uncanny Dodge Tracker
