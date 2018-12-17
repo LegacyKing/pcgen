@@ -462,12 +462,12 @@ Arcane Bloodline		CATEGORY:Bloodrager Bloodline		TYPE:BloodragerBloodlineChoice	
 # Arcane Bloodline Feat Tracker
 Arcane Bloodrager Bloodline ~ Feat Tracker		CATEGORY:Internal
 CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_CombatReflexes|1	
-CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Disruptive|1		 
-CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_ImprovedInitiative|1	 
-CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_IronWill|1		
-CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_PowerAttack|1		 
+CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Disruptive|1		
+CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_ImprovedInitiative|1	
+CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_IronWill|1	
+CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_PowerAttack|1	
 CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_QuickDraw|1		
-CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Spellbreaker|1		 
+CATEGORY=Internal|Arcane Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Spellbreaker|1		
 
 # Arcane Bloodline Bonus Spells
 Arcane Bloodrager Bloodline ~ Bonus Spells		CATEGORY:Special Ability		TYPE:Internal		SPELLKNOWN:CLASS|Bloodrager=1|Magic Missile|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7		SPELLKNOWN:CLASS|Bloodrager=2|Invisibility|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10		SPELLKNOWN:CLASS|Bloodrager=3|Lightning Bolt|PREVAREQ:Bloodrager_CF_BloodlineSpell3,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,13		SPELLKNOWN:CLASS|Bloodrager=4|Dimension Door|PREVAREQ:Bloodrager_CF_BloodlineSpell4,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,16
