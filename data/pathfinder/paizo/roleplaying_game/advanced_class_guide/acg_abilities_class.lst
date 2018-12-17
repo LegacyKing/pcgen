@@ -327,6 +327,25 @@ Breath Weapon									KEY:Dragon Disciple ~ Breath Weapon			CATEGORY:Special Abi
 ###
 Special Bloodline Feat		CATEGORY:FEAT		STACK:YES	MULT:YES		CHOOSE:ABILITYSELECTION|Internal|QUALIFIED[TYPE=BloodLineAdditional]		ABILITY:Internal|AUTOMATIC|%LIST
 
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Alertness|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_BlindFight|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_CombatCasting|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_CombatReflexes|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Dodge|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_ImprovedInitiative|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_LightningReflexes|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_PowerAttack|0
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Stealthy|0
+Alertness			KEY:Bloodrager Bloodline Feat ~ Alertness					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Alertness,1			ABILITY:FEAT|AUTOMATIC|Alertness					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Blind-Fight			KEY:Bloodrager Bloodline Feat ~ Blind-Fight				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_BlindFight,1		ABILITY:FEAT|AUTOMATIC|Blind-Fight					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Combat Casting		KEY:Bloodrager Bloodline Feat ~ Combat Casting				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_CombatCasting,1		ABILITY:FEAT|AUTOMATIC|Combat Casting				DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Combat Reflexes		KEY:Bloodrager Bloodline Feat ~ Combat Reflexes				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_CombatReflexes,1		ABILITY:FEAT|AUTOMATIC|Combat Reflexes				DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Dodge				KEY:Bloodrager Bloodline Feat ~ Dodge					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Dodge,1			ABILITY:FEAT|AUTOMATIC|Dodge						DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Improved Initiative	KEY:Bloodrager Bloodline Feat ~ Improved Initiative			CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_ImprovedInitiative,1	ABILITY:FEAT|AUTOMATIC|Improved Initiative			DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Lightning Reflexes	KEY:Bloodrager Bloodline Feat ~ Lightning Reflexes			CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_LightningReflexes,1	ABILITY:FEAT|AUTOMATIC|Lightning Reflexes				DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Power Attack		KEY:Bloodrager Bloodline Feat ~ Power Attack				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_PowerAttack,1		ABILITY:FEAT|AUTOMATIC|Power Attack					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Stealthy			KEY:Bloodrager Bloodline Feat ~ Stealthy					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Stealthy,1			ABILITY:FEAT|AUTOMATIC|Stealthy					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+
 
 
 Standard Bloodline	KEY:Bloodrager ~ Standard Bloodline Selection	CATEGORY:Internal		TYPE:Bloodline Selection	PREABILITY:1,CATEGORY=Special Ability,Bloodrager ~ Standard Bloodline	STACK:NO	MULT:YES	CHOOSE:ABILITYSELECTION|Bloodrager Bloodline|!PC,QUALIFIED[TYPE=BloodragerBloodlineChoice]	ABILITY:Bloodrager Bloodline|AUTOMATIC|%LIST

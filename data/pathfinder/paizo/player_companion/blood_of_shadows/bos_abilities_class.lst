@@ -37,7 +37,15 @@ Shadow Bloodrager Bloodline		KEY:Bloodrager Bloodline ~ Shadow		CATEGORY:Special
 Shadow Bloodline		CATEGORY:Bloodrager Bloodline		TYPE:BloodragerBloodlineChoice		BONUS:VAR|Bloodrager_Shadow_BloodlineLVL|BloodragerBloodlineLVL		BONUS:VAR|Bloodrager_Shadow_BloodlineProgressionLVL|BloodragerBloodlineProgressionLVL		BONUS:VAR|Bloodrager_Shadow_BloodlineSpells1|if(Bloodrager_CF_BloodlineSpells==0,1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePowers|if(Bloodrager_CF_BloodlinePowers==0,1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower4|if((Bloodrager_CF_BloodlinePower4==0&&BloodragerLVL>=4),1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower8|if((Bloodrager_CF_BloodlinePower8==0&&BloodragerLVL>=8),1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower12|if((Bloodrager_CF_BloodlinePower12==0&&BloodragerLVL>=12),1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower16|if((Bloodrager_CF_BloodlinePower16==0&&BloodragerLVL>=16),1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower20|if((Bloodrager_CF_BloodlinePower20==0&&BloodragerLVL>=20),1,0)		BONUS:VAR|Bloodrager_Shadow_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus		ABILITY:Internal|AUTOMATIC|Shadow Bloodrager Bloodline ~ Feat Tracker		BONUS:ABILITYPOOL|Bloodrager Bloodline Feat|BloodragerBloodlineFeatCount		ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Shadow
 # Shadow Bloodline Feat Tracker
 Shadow Bloodrager Bloodline ~ Feat Tracker		CATEGORY:Internal
-#		BONUS:VAR|Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Alertness|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_BlindFight|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_CombatCasting|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_CombatReflexes|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Dodge|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_ImprovedInitiative|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_LightningReflexes|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_PowerAttack|1
+CATEGORY=Internal|Shadow Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Stealthy|1
 # Shadow Bloodline Bonus Spells
 Shadow Bloodrager Bloodline ~ Bonus Spells		CATEGORY:Special Ability		TYPE:Internal		SPELLKNOWN:CLASS|Bloodrager=1|Ray of Enfeeblement|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7		SPELLKNOWN:CLASS|Bloodrager=2|Darkvision|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10		SPELLKNOWN:CLASS|Bloodrager=3|Deeper Darkness|PREVAREQ:Bloodrager_CF_BloodlineSpell3,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,13		SPELLKNOWN:CLASS|Bloodrager=4|Shadow Conjuration|PREVAREQ:Bloodrager_CF_BloodlineSpell4,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,16
 # Shadow Bloodline Powers
@@ -50,10 +58,6 @@ Shadow Door		KEY:Shadow Bloodrager Bloodline ~ Shadow Door		CATEGORY:Special Abi
 Shadow Warrior		KEY:Shadow Bloodrager Bloodline ~ Shadow Warrior		CATEGORY:Special Ability		TYPE:Class Feature.Bloodrager Class Feature.Shadow Bloodrager Bloodline ~ Power LVL 20.Bloodrager Bloodline Power.SpecialAttack.Supernatural		PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Shadow		PREVARGTEQ:Bloodrager_Shadow_BloodlineProgressionLVL,20		DEFINE:Bloodrager_Shadow_BloodlinePower20LVL|0	DESC:You become shadow and fury personified. You see perfectly in natural and magical darkness. Whenever you deal hit point damage with a spell or attack, you also deal 2 points of Strength damage to each creature that took damage.		SOURCEPAGE:p.16		ASPECT:ChildAbility|ShadowBloodragerBloodlinePowers
 
 ###Block: Bonus Feat Choices -- Remove parenthesis from PREVAR variable.
-
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	
-#DEFINE:Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>|0
-#<<Feat1>>		KEY:Bloodrager Bloodline Feat ~ <<Feat1>>		CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>,1		PRE<<Feat1 Prerequisites>>		ABILITY:FEAT|AUTOMATIC|<<Feat1>>		DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
 
 ###Block: Crossblooded Bloodlines -- Goes in UM or UM support _abilities_class.lst
 
