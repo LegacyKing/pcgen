@@ -292,7 +292,14 @@ Verdant Bloodrager Bloodline		KEY:Bloodrager Bloodline ~ Verdant		CATEGORY:Speci
 Verdant Bloodline		CATEGORY:Bloodrager Bloodline		TYPE:BloodragerBloodlineChoice		BONUS:VAR|Bloodrager_Verdant_BloodlineLVL|BloodragerBloodlineLVL		BONUS:VAR|Bloodrager_Verdant_BloodlineProgressionLVL|BloodragerBloodlineProgressionLVL		BONUS:VAR|Bloodrager_Verdant_BloodlineSpells1|if(Bloodrager_CF_BloodlineSpells==0,1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePowers|if(Bloodrager_CF_BloodlinePowers==0,1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower4|if((Bloodrager_CF_BloodlinePower4==0&&BloodragerLVL>=4),1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower8|if((Bloodrager_CF_BloodlinePower8==0&&BloodragerLVL>=8),1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower12|if((Bloodrager_CF_BloodlinePower12==0&&BloodragerLVL>=12),1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower16|if((Bloodrager_CF_BloodlinePower16==0&&BloodragerLVL>=16),1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower20|if((Bloodrager_CF_BloodlinePower20==0&&BloodragerLVL>=20),1,0)		BONUS:VAR|Bloodrager_Verdant_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus		ABILITY:Internal|AUTOMATIC|Verdant Bloodrager Bloodline ~ Feat Tracker		BONUS:ABILITYPOOL|Bloodrager Bloodline Feat|BloodragerBloodlineFeatCount		ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Verdant
 # Verdant Bloodline Feat Tracker
 Verdant Bloodrager Bloodline ~ Feat Tracker		CATEGORY:Internal
-#		BONUS:VAR|Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>|1
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_BolsteredResilience|1	
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Diehard|1			
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Endurance|1		
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_GreatFortitude|1	
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_PowerAttack|1		
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_RagingVitality|1	
+CATEGORY=Internal|Verdant Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_Toughness|1		
+
 # Verdant Bloodline Bonus Spells
 Verdant Bloodrager Bloodline ~ Bonus Spells		CATEGORY:Special Ability		TYPE:Internal		SPELLKNOWN:CLASS|Bloodrager=1|Entangle|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7		SPELLKNOWN:CLASS|Bloodrager=2|Greensight|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10		SPELLKNOWN:CLASS|Bloodrager=3|Burst of Nettles|PREVAREQ:Bloodrager_CF_BloodlineSpell3,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,13		SPELLKNOWN:CLASS|Bloodrager=4|Command Plants|PREVAREQ:Bloodrager_CF_BloodlineSpell4,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,16
 # Verdant Bloodline Powers
@@ -305,10 +312,21 @@ Nature's Thorns		KEY:Verdant Bloodrager Bloodline ~ Nature's Thorns		CATEGORY:Sp
 Verdant Apotheosis		KEY:Verdant Bloodrager Bloodline ~ Verdant Apotheosis		CATEGORY:Special Ability		TYPE:Class Feature.Bloodrager Class Feature.Verdant Bloodrager Bloodline ~ Power LVL 20.Bloodrager Bloodline Power.SpecialQuality.Supernatural		PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Verdant		PREVARGTEQ:Bloodrager_Verdant_BloodlineProgressionLVL,20		DEFINE:Bloodrager_Verdant_BloodlinePower20LVL|0	DESC:Verdant power surges throughout your being. While bloodraging, you gain tremorsense out to 30 feet. In addition, you gain immunity to paralysis, poison, sleep, and stunning effects, even while you are not bloodraging.	SOURCEPAGE:p.17		ASPECT:ChildAbility|VerdantBloodragerBloodlinePowers
 
 ###Block: Bonus Feat Choices -- Remove parenthesis from PREVAR variable.
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_BolsteredResilience|0	
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Diehard|0			
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Endurance|0			
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_GreatFortitude|0		
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_PowerAttack|0		
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_RagingVitality|0		
+CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:Bloodrager_BloodlineFeat_Toughness|0			
 
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	
-#DEFINE:Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>|0
-#<<Feat1>>		KEY:Bloodrager Bloodline Feat ~ <<Feat1>>		CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_<<Feat1withoutspaces>>,1		PRE<<Feat1 Prerequisites>>		ABILITY:FEAT|AUTOMATIC|<<Feat1>>		DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+Bolstered Resilience	KEY:Bloodrager Bloodline Feat ~ Bolstered Resilience			CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_BolsteredResilience,1			ABILITY:FEAT|AUTOMATIC|Bolstered Resilience			DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Diehard			KEY:Bloodrager Bloodline Feat ~ Diehard					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Diehard,1			ABILITY:FEAT|AUTOMATIC|Diehard					DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Endurance			KEY:Bloodrager Bloodline Feat ~ Endurance					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Endurance,1			ABILITY:FEAT|AUTOMATIC|Endurance					DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Great Fortitude		KEY:Bloodrager Bloodline Feat ~ Great Fortitude				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_GreatFortitude,1			ABILITY:FEAT|AUTOMATIC|Great Fortitude				DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Power Attack		KEY:Bloodrager Bloodline Feat ~ Power Attack				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_PowerAttack,1			ABILITY:FEAT|AUTOMATIC|Power Attack				DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Raging Vitality		KEY:Bloodrager Bloodline Feat ~ Raging Vitality				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_RagingVitality,1			ABILITY:FEAT|AUTOMATIC|Raging Vitality				DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
+Toughness			KEY:Bloodrager Bloodline Feat ~ Toughness					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Toughness,1			ABILITY:FEAT|AUTOMATIC|Toughness					DESC:xxx		SOURCEPAGE:p.xxx		BENEFIT:xxx					
 
 ###Block: Crossblooded Bloodlines -- Goes in UM or UM support _abilities_class.lst
 
