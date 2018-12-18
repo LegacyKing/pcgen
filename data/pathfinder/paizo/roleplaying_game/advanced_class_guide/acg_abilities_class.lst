@@ -637,128 +637,15 @@ CATEGORY=Internal|Elemental Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bl
 CATEGORY=Internal|Elemental Bloodrager Bloodline ~ Feat Tracker.MOD	BONUS:VAR|Bloodrager_BloodlineFeat_WeaponFocus|1		
 
 # Elemental Bloodline Bonus Spells
-Elemental Bloodrager Bloodline ~ Bonus Spells
-	CATEGORY:Special Ability
-	TYPE:Internal
-	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Acid)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Cold)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Water,1
-	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Electricity)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Air,1
-	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Acid)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Cold)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Water,1
-	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Electricity)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Air,1
-	SPELLKNOWN:CLASS|Bloodrager=3|Protection from Energy|PREVAREQ:Bloodrager_CF_BloodlineSpell3,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,13
-	SPELLKNOWN:CLASS|Bloodrager=4|Elemental Body I|PREVAREQ:Bloodrager_CF_BloodlineSpell4,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,16
+Elemental Bloodrager Bloodline ~ Bonus Spells	CATEGORY:Special Ability	TYPE:Internal	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Fire,1	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Acid)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Earth,1	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Cold)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Water,1	SPELLKNOWN:CLASS|Bloodrager=1|Burning Hands (Electricity)|PREVAREQ:Bloodrager_CF_BloodlineSpell1,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,7|PREVAREQ:BloodragerElementalBloodline_Air,1	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Fire,1	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Acid)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Earth,1	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Cold)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Water,1	SPELLKNOWN:CLASS|Bloodrager=2|Scorching Ray (Electricity)|PREVAREQ:Bloodrager_CF_BloodlineSpell2,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,10|PREVAREQ:BloodragerElementalBloodline_Air,1	SPELLKNOWN:CLASS|Bloodrager=3|Protection from Energy|PREVAREQ:Bloodrager_CF_BloodlineSpell3,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,13	SPELLKNOWN:CLASS|Bloodrager=4|Elemental Body I|PREVAREQ:Bloodrager_CF_BloodlineSpell4,0|PREVARGTEQ:BloodragerBloodlineCasterLVL,16
 # Elemental Bloodline Powers
-Bloodline Powers
-	KEY:Elemental Bloodrager Bloodline ~ Bloodline Powers
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature
-	DESC:BPd
-	SOURCEPAGE:p.21
-	ASPECT:MasterAbility|ElementalBloodragerBloodlinePowers
-Elemental Strikes
-	KEY:Elemental Bloodrager Bloodline ~ Elemental Strikes
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 01.Bloodrager Bloodline Power.SpecialAttack.Supernatural
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,1
-	DEFINE:Bloodrager_Elemental_BloodlinePower1LVL|0
-	DEFINE:Bloodrager_Elemental_BloodlinePower1Times|0
-	SOURCEPAGE:p.21
-	ASPECT:CheckCount|%1|Bloodrager_Elemental_BloodlinePower1Times
-	ASPECT:CheckType|Uses per Day
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
-	DEFINE:ElementalStrikesTimes|0
-	DESC:As a swift action up to %1 times a day, you can imbue your melee attacks with elemental energy. For 1 round, your|ElementalStrikesTimes|PREVARLT:BloodragerBloodlineLVL,20
-	DESC:Your|PREVARGTEQ:BloodragerBloodlineLVL,20
-	DESC: melee attacks deal 1d6 extra
-	DESC: electricity damage.|PREVAREQ:BloodragerElementalBloodline_Air,1
-	DESC: acid damage.|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	DESC: fire damage.|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	DESC: cold damage.|PREVAREQ:BloodragerElementalBloodline_Water,1
-Elemental Resistance
-	DEFINE:ElementalResistanceBonus|0
-	BONUS:VAR|ElementalResistanceBonus|10
-	KEY:Elemental Bloodrager Bloodline ~ Elemental Resistance
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 04.Bloodrager Bloodline Power.SpecialQuality.Extraordinary
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,4
-	DEFINE:Bloodrager_Elemental_BloodlinePower4LVL|0
-	SOURCEPAGE:p.21
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
-	BONUS:VAR|ElectricityResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Air,1
-	BONUS:VAR|AcidResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	BONUS:VAR|FireResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	BONUS:VAR|ColdResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Water,1
-	DESC:You gain electricity resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Air,1
-	DESC:You gain acid resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	DESC:You gain fire resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	DESC:You gain cold resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Water,1
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity|PREVAREQ:BloodragerElementalBloodline_Air,1
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold|PREVAREQ:BloodragerElementalBloodline_Water,1
-Elemental Movement
-	KEY:Elemental Bloodrager Bloodline ~ Elemental Movement
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 08.Bloodrager Bloodline Power.SpecialQuality.Extraordinary
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,8
-	DEFINE:Bloodrager_Elemental_BloodlinePower8LVL|0
-	SOURCEPAGE:p.21
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
-	DESC:You gain a fly speed of 60 ft. with average maneuverability.|PREVAREQ:BloodragerElementalBloodline_Air,1
-	DESC:You gain a burrow speed of 30 ft.|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	DESC:Your base speed increases by 30 ft.|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	DESC:You gain a swim speed of 60 ft.|PREVAREQ:BloodragerElementalBloodline_Water,1
-	ABILITY:Internal|AUTOMATIC|Move ~ Fly (60)|PREVAREQ:BloodragerElementalBloodline_Air,1
-	ABILITY:Internal|AUTOMATIC|Move ~ Burrow (30)|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	ABILITY:Internal|AUTOMATIC|Move ~ Land Increase (30)|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	ABILITY:Internal|AUTOMATIC|Move ~ Swim (60)|PREVAREQ:BloodragerElementalBloodline_Water,1
-	
-Elemental Form
-	DEFINE:ElementalFormDuration|0
-	KEY:Elemental Bloodrager Bloodline ~ Elemental Form
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 12.Bloodrager Bloodline Power.SpecialQuality.Supernatural
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,12
-	DEFINE:Bloodrager_Elemental_BloodlinePower12LVL|0
-	DESC:Once per day, you can take an elemental form as Elemental Body IV, but with a duration of %1 rounds.|ElementalFormDuration
-	BONUS:VAR|ElementalFormDuration|BloodragerBloodlineLVL
-	SOURCEPAGE:p.21
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
-Power of the Elements
-	KEY:Elemental Bloodrager Bloodline ~ Power of the Elements
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 16.Bloodrager Bloodline Power.SpecialAttack.Supernatural
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,16
-	DEFINE:Bloodrager_Elemental_BloodlinePower16LVL|0
-	DESC:The electricity damage done by your elemental strikes ability bypasses electricity resistance, and still deals half damage to creatures with immunity to electricity.|PREVAREQ:BloodragerElementalBloodline_Air,1
-	DESC:The acid damage done by your elemental strikes ability bypasses acid resistance, and still deals half damage to creatures with immunity to acid.|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	DESC:The fire damage done by your elemental strikes ability bypasses fire resistance, and still deals half damage to creatures with immunity to fire.|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	DESC:The cold damage done by your elemental strikes ability bypasses cold resistance, and still deals half damage to creatures with immunity to cold.|PREVAREQ:BloodragerElementalBloodline_Water,1
-	SOURCEPAGE:p.21
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
-Elemental Body
-	KEY:Elemental Bloodrager Bloodline ~ Elemental Body
-	CATEGORY:Special Ability
-	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 20.Bloodrager Bloodline Power.SpecialQuality.Supernatural
-	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental
-	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,20
-	DEFINE:Bloodrager_Elemental_BloodlinePower20LVL|0
-	DESC:Elemental power surges through your body. You gain immunity to sneak attacks, critical hits, and
-	DESC: electricity damage.|PREVAREQ:BloodragerElementalBloodline_Air,1
-	DESC: acid damage.|PREVAREQ:BloodragerElementalBloodline_Earth,1
-	DESC: fire damage.|PREVAREQ:BloodragerElementalBloodline_Fire,1
-	DESC: cold damage.|PREVAREQ:BloodragerElementalBloodline_Water,1
-	DESC: You have this benefit constantly, even while not bloodraging.
-	SOURCEPAGE:p.21
-	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
+Bloodline Powers	KEY:Elemental Bloodrager Bloodline ~ Bloodline Powers	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature	DESC:BPd	SOURCEPAGE:p.21	ASPECT:MasterAbility|ElementalBloodragerBloodlinePowers
+Elemental Strikes	KEY:Elemental Bloodrager Bloodline ~ Elemental Strikes	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 01.Bloodrager Bloodline Power.SpecialAttack.Supernatural	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,1	DEFINE:Bloodrager_Elemental_BloodlinePower1LVL|0	DEFINE:Bloodrager_Elemental_BloodlinePower1Times|0	SOURCEPAGE:p.21	ASPECT:CheckCount|%1|Bloodrager_Elemental_BloodlinePower1Times	ASPECT:CheckType|Uses per Day	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers	DEFINE:ElementalStrikesTimes|0	DESC:As a swift action up to %1 times a day, you can imbue your melee attacks with elemental energy. For 1 round, your|ElementalStrikesTimes|PREVARLT:BloodragerBloodlineLVL,20	DESC:Your|PREVARGTEQ:BloodragerBloodlineLVL,20	DESC: melee attacks deal 1d6 extra	DESC: electricity damage.|PREVAREQ:BloodragerElementalBloodline_Air,1	DESC: acid damage.|PREVAREQ:BloodragerElementalBloodline_Earth,1	DESC: fire damage.|PREVAREQ:BloodragerElementalBloodline_Fire,1	DESC: cold damage.|PREVAREQ:BloodragerElementalBloodline_Water,1
+Elemental Resistance	DEFINE:ElementalResistanceBonus|0	BONUS:VAR|ElementalResistanceBonus|10	KEY:Elemental Bloodrager Bloodline ~ Elemental Resistance	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 04.Bloodrager Bloodline Power.SpecialQuality.Extraordinary	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,4	DEFINE:Bloodrager_Elemental_BloodlinePower4LVL|0	SOURCEPAGE:p.21	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers	BONUS:VAR|ElectricityResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Air,1	BONUS:VAR|AcidResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Earth,1	BONUS:VAR|FireResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Fire,1	BONUS:VAR|ColdResistanceBonus|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Water,1	DESC:You gain electricity resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Air,1	DESC:You gain acid resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Earth,1	DESC:You gain fire resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Fire,1	DESC:You gain cold resistance %1|ElementalResistanceBonus|PREVAREQ:BloodragerElementalBloodline_Water,1	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity|PREVAREQ:BloodragerElementalBloodline_Air,1	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid|PREVAREQ:BloodragerElementalBloodline_Earth,1	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire|PREVAREQ:BloodragerElementalBloodline_Fire,1	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold|PREVAREQ:BloodragerElementalBloodline_Water,1
+Elemental Movement	KEY:Elemental Bloodrager Bloodline ~ Elemental Movement	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 08.Bloodrager Bloodline Power.SpecialQuality.Extraordinary	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,8	DEFINE:Bloodrager_Elemental_BloodlinePower8LVL|0	SOURCEPAGE:p.21	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers	DESC:You gain a fly speed of 60 ft. with average maneuverability.|PREVAREQ:BloodragerElementalBloodline_Air,1	DESC:You gain a burrow speed of 30 ft.|PREVAREQ:BloodragerElementalBloodline_Earth,1	DESC:Your base speed increases by 30 ft.|PREVAREQ:BloodragerElementalBloodline_Fire,1	DESC:You gain a swim speed of 60 ft.|PREVAREQ:BloodragerElementalBloodline_Water,1	ABILITY:Internal|AUTOMATIC|Move ~ Fly (60)|PREVAREQ:BloodragerElementalBloodline_Air,1	ABILITY:Internal|AUTOMATIC|Move ~ Burrow (30)|PREVAREQ:BloodragerElementalBloodline_Earth,1	ABILITY:Internal|AUTOMATIC|Move ~ Land Increase (30)|PREVAREQ:BloodragerElementalBloodline_Fire,1	ABILITY:Internal|AUTOMATIC|Move ~ Swim (60)|PREVAREQ:BloodragerElementalBloodline_Water,1	
+Elemental Form	DEFINE:ElementalFormDuration|0	KEY:Elemental Bloodrager Bloodline ~ Elemental Form	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 12.Bloodrager Bloodline Power.SpecialQuality.Supernatural	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,12	DEFINE:Bloodrager_Elemental_BloodlinePower12LVL|0	DESC:Once per day, you can take an elemental form as Elemental Body IV, but with a duration of %1 rounds.|ElementalFormDuration	BONUS:VAR|ElementalFormDuration|BloodragerBloodlineLVL	SOURCEPAGE:p.21	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
+Power of the Elements	KEY:Elemental Bloodrager Bloodline ~ Power of the Elements	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 16.Bloodrager Bloodline Power.SpecialAttack.Supernatural	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,16	DEFINE:Bloodrager_Elemental_BloodlinePower16LVL|0	DESC:The electricity damage done by your elemental strikes ability bypasses electricity resistance, and still deals half damage to creatures with immunity to electricity.|PREVAREQ:BloodragerElementalBloodline_Air,1	DESC:The acid damage done by your elemental strikes ability bypasses acid resistance, and still deals half damage to creatures with immunity to acid.|PREVAREQ:BloodragerElementalBloodline_Earth,1	DESC:The fire damage done by your elemental strikes ability bypasses fire resistance, and still deals half damage to creatures with immunity to fire.|PREVAREQ:BloodragerElementalBloodline_Fire,1	DESC:The cold damage done by your elemental strikes ability bypasses cold resistance, and still deals half damage to creatures with immunity to cold.|PREVAREQ:BloodragerElementalBloodline_Water,1	SOURCEPAGE:p.21	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
+Elemental Body	KEY:Elemental Bloodrager Bloodline ~ Elemental Body	CATEGORY:Special Ability	TYPE:Class Feature.Bloodrager Class Feature.Elemental Bloodrager Bloodline ~ Power LVL 20.Bloodrager Bloodline Power.SpecialQuality.Supernatural	PREABILITY:1,CATEGORY=Special Ability,Bloodrager Bloodline ~ Elemental	PREVARGTEQ:Bloodrager_Elemental_BloodlineProgressionLVL,20	DEFINE:Bloodrager_Elemental_BloodlinePower20LVL|0	DESC:Elemental power surges through your body. You gain immunity to sneak attacks, critical hits, and	DESC: electricity damage.|PREVAREQ:BloodragerElementalBloodline_Air,1	DESC: acid damage.|PREVAREQ:BloodragerElementalBloodline_Earth,1	DESC: fire damage.|PREVAREQ:BloodragerElementalBloodline_Fire,1	DESC: cold damage.|PREVAREQ:BloodragerElementalBloodline_Water,1	DESC: You have this benefit constantly, even while not bloodraging.	SOURCEPAGE:p.21	ASPECT:ChildAbility|ElementalBloodragerBloodlinePowers
 
 Move ~ Fly (60)			CATEGORY:Internal	MOVE:Fly,60
 Move ~ Burrow (30)		CATEGORY:Internal	MOVE:Burrow,30
