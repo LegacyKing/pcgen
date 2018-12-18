@@ -295,13 +295,6 @@ CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlineP
 CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower16LVLBonus|0
 CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower20LVLBonus|0
 
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower1LVLBonus|0
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower4LVLBonus|0
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower8LVLBonus|0
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower12LVLBonus|0
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower16LVLBonus|0
-CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	DEFINE:BloodragerBloodlinePower20LVLBonus|0
-
 CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	BONUS:VAR|BloodragerBloodlineBonusFeats|1|PREVARGTEQ:BloodragerBloodlineFeatProgression,6|PREVAREQ:Bloodrager_CF_BloodlineFeat6,0
 CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	BONUS:VAR|BloodragerBloodlineBonusFeats|1|PREVARGTEQ:BloodragerBloodlineFeatProgression,9|PREVAREQ:Bloodrager_CF_BloodlineFeat9,0
 CATEGORY=Internal|Bloodrager ~ Bloodline Tracker.MOD	BONUS:VAR|BloodragerBloodlineBonusFeats|1|PREVARGTEQ:BloodragerBloodlineFeatProgression,12|PREVAREQ:Bloodrager_CF_BloodlineFeat12,0
@@ -390,6 +383,7 @@ Stealthy			KEY:Bloodrager Bloodline Feat ~ Stealthy					CATEGORY:Internal		TYPE:
 Step Up			KEY:Bloodrager Bloodline Feat ~ Step Up					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_StepUp,1						ABILITY:FEAT|AUTOMATIC|Step Up					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
 Toughness			KEY:Bloodrager Bloodline Feat ~ Toughness					CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_Toughness,1			ABILITY:FEAT|AUTOMATIC|Toughness					DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
 Weapon Focus		KEY:Bloodrager Bloodline Feat ~ Weapon Focus				CATEGORY:Internal		TYPE:Bloodrager Bloodline Feat		PREVARGTEQ:Bloodrager_BloodlineFeat_WeaponFocus,1				BONUS:ABILITYPOOL|Weapon Focus|1	MULT:YES	CHOOSE:NOCHOICE	STACK:YES				DESC:<<Feat1 Description>>		SOURCEPAGE:p.<<Feat1 Source Page>>		BENEFIT:<<Feat1 Benefits>>
+
 
 
 Standard Bloodline	KEY:Bloodrager ~ Standard Bloodline Selection	CATEGORY:Internal		TYPE:Bloodline Selection	PREABILITY:1,CATEGORY=Special Ability,Bloodrager ~ Standard Bloodline	STACK:NO	MULT:YES	CHOOSE:ABILITYSELECTION|Bloodrager Bloodline|!PC,QUALIFIED[TYPE=BloodragerBloodlineChoice]	ABILITY:Bloodrager Bloodline|AUTOMATIC|%LIST
