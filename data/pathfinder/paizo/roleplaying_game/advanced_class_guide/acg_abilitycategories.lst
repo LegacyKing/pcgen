@@ -41,7 +41,9 @@ ABILITYCATEGORY:Arcanist School Power		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES
 
 # New
 ABILITYCATEGORY:Bloodrager Bloodline			VISIBLE:NO		EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Bloodrager Bloodline
-ABILITYCATEGORY:Crossblooded Bloodrager Bloodline	VISIBLE:NO		EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Crossblooded Bloodrager Bloodline
+ABILITYCATEGORY:Crossblooded Rager Bloodline		VISIBLE:NO		EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Crossblooded Rager Bloodline
+ABILITYCATEGORY:Bloodrager Bloodline Bonus Spell	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Internal					TYPE:Bloodrager Bloodline Bonus Spell	PLURAL:Bloodrager Bloodline Bonus Spells	DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Bloodrager Bloodline Power		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability			TYPE:Bloodrager Bloodline Power		PLURAL:Bloodrager Bloodline Powers		DISPLAYLOCATION:Class Features
 
 # OLD
 #ABILITYCATEGORY:Bloodrager Bloodline		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability			TYPE:BloodragerBloodline		PLURAL:Bloodrager Bloodlines			DISPLAYLOCATION:Class Features
@@ -66,10 +68,10 @@ ABILITYCATEGORY:Fey Bloodrager Bloodline Feat		VISIBLE:QUALIFY	EDITABLE:YES	EDIT
 ABILITYCATEGORY:Infernal Bloodrager Bloodline Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:FEAT					TYPE:InfernalBloodragerBloodline		ABILITYLIST:Special Bloodline Feat				PLURAL:Infernal Bloodrager Bloodline Feats	DISPLAYLOCATION:Feats
 ABILITYCATEGORY:Undead Bloodrager Bloodline Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:FEAT					TYPE:UndeadBloodragerBloodline		ABILITYLIST:Special Bloodline Feat				PLURAL:Undead Bloodrager Bloodline Feats		DISPLAYLOCATION:Feats
 #
-ABILITYCATEGORY:Crossblooded Rager Bloodline		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerBloodline											PLURAL:Crossblooded Rager Bloodlines		DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Crossblooded Rager Bloodline Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerFeat												PLURAL:Crossblooded Rager Feats			DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Crossblooded Rager Spell			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerSpellChoice											PLURAL:Crossblooded Rager Spells			DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Crossblooded Rager Bloodline Powers	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerPowerChoice											PLURAL:Crossblooded Rager Bloodline Powers	DISPLAYLOCATION:Class Features
+#ABILITYCATEGORY:Crossblooded Rager Bloodline		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerBloodline											PLURAL:Crossblooded Rager Bloodlines		DISPLAYLOCATION:Class Features
+#ABILITYCATEGORY:Crossblooded Rager Bloodline Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerFeat												PLURAL:Crossblooded Rager Feats			DISPLAYLOCATION:Class Features
+#ABILITYCATEGORY:Crossblooded Rager Spell			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerSpellChoice											PLURAL:Crossblooded Rager Spells			DISPLAYLOCATION:Class Features
+#ABILITYCATEGORY:Crossblooded Rager Bloodline Powers	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Special Ability			TYPE:CrossbloodedRagerPowerChoice											PLURAL:Crossblooded Rager Bloodline Powers	DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Bloodrager Draconic Bloodline		VISIBLE:NO		EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO								CATEGORY:Bloodrager Draconic Bloodline
 
 #
