@@ -119,7 +119,7 @@ Deeper Darkness		KEY:Bloodrager Bonus Spell L3 ~ Deeper Darkness		CATEGORY:Inter
 Fear				KEY:Bloodrager Bonus Spell L4 ~ Fear			CATEGORY:Internal	TYPE:Bloodrager Bloodline Bonus Spell	PREVARGTEQ:Bloodrager_BonusSpell_L4_Fear,1			PREVARGTEQ:BloodragerBloodlineCasterLVL,16	SPELLKNOWN:CLASS|Bloodrager=4|Fear
 
 ###Block: Raging Blood Feat Bloodlines
-Kyton Bloodline		KEY:Raging Blood Bloodline ~ Kyton	CATEGORY:Raging Blood Feat Bloodline	TYPE:Raging Blood Feat Bloodline	ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Kyton		BONUS:VAR|Bloodrager_Kyton_BloodlineLVL|1	BONUS:VAR|Bloodrager_Kyton_BloodlineProgressionLVL|1	BONUS:VAR|Bloodrager_Kyton_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus	BONUS:VAR|Bloodrager_Kyton_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)	PREMULT:1[PREABILITY:1,CATEGORY=Eldritch Heritage Bloodline,Kyton Bloodline],[PREABILITY:1,CATEGORY=Sorcerer Bloodline,Kyton Bloodline]
+Kyton Bloodline		KEY:Raging Blood Bloodline ~ Kyton	CATEGORY:Raging Blood Feat Bloodline	TYPE:Raging Blood Feat Bloodline	ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Kyton		BONUS:VAR|Bloodrager_Kyton_BloodlineLVL|1	BONUS:VAR|Bloodrager_Kyton_BloodlineProgressionLVL|1	BONUS:VAR|Bloodrager_Kyton_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus	BONUS:VAR|Bloodrager_Kyton_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)	PREMULT:1,[PREABILITY:1,CATEGORY=Eldritch Heritage Bloodline,Kyton Bloodline],[PREABILITY:1,CATEGORY=Sorcerer Bloodline,Kyton Bloodline]
 
 
 # ==============================

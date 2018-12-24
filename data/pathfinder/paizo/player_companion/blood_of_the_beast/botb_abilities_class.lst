@@ -279,7 +279,7 @@ Lightning Bolt		KEY:Bloodrager Bonus Spell L3 ~ Lightning Bolt		CATEGORY:Interna
 Poison			KEY:Bloodrager Bonus Spell L4 ~ Poison			CATEGORY:Internal	TYPE:Bloodrager Bloodline Bonus Spell	PREVARGTEQ:Bloodrager_BonusSpell_L4_Poison,1		PREVARGTEQ:BloodragerBloodlineCasterLVL,16	SPELLKNOWN:CLASS|Bloodrager=4|Poison
 
 ###Block: Raging Blood Feat Bloodlines
-Naga Bloodline		KEY:Raging Blood Bloodline ~ Naga	CATEGORY:Raging Blood Feat Bloodline	TYPE:Raging Blood Feat Bloodline	ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Naga		BONUS:VAR|Bloodrager_Naga_BloodlineLVL|1	BONUS:VAR|Bloodrager_Naga_BloodlineProgressionLVL|1	BONUS:VAR|Bloodrager_Naga_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus	BONUS:VAR|Bloodrager_Naga_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)	PREMULT:1[PREABILITY:1,CATEGORY=Eldritch Heritage Bloodline,Naga Bloodline],[PREABILITY:1,CATEGORY=Sorcerer Bloodline,Naga Bloodline]
+Naga Bloodline		KEY:Raging Blood Bloodline ~ Naga	CATEGORY:Raging Blood Feat Bloodline	TYPE:Raging Blood Feat Bloodline	ABILITY:Special Ability|AUTOMATIC|Bloodrager Bloodline ~ Naga		BONUS:VAR|Bloodrager_Naga_BloodlineLVL|1	BONUS:VAR|Bloodrager_Naga_BloodlineProgressionLVL|1	BONUS:VAR|Bloodrager_Naga_BloodlinePower1Times|BloodragerBloodlinePowerTimes+BloodragerBloodlinePower1TimesBonus	BONUS:VAR|Bloodrager_Naga_BloodlinePower1|if(Bloodrager_CF_BloodlinePower1==0,1,0)	PREMULT:1,[PREABILITY:1,CATEGORY=Eldritch Heritage Bloodline,Naga Bloodline],[PREABILITY:1,CATEGORY=Sorcerer Bloodline,Naga Bloodline]
 
 
 # ==============================
