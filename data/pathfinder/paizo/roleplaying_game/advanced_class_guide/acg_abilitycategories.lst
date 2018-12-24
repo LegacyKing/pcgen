@@ -215,6 +215,11 @@ ABILITYCATEGORY:Bloodrager Draconic Bloodline Type			VISIBLE:QUALIFY	EDITABLE:YE
 ABILITYCATEGORY:Bloodrager Elemental Bloodline Type			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO								CATEGORY:Bloodrager Elemental Bloodline		TYPE:Bloodrager Elemental Bloodline Choice																				DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Bloodrager Elemental Bloodline				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO								CATEGORY:Bloodrager Elemental Bloodline																				DISPLAYLOCATION:Class Features
 
+ABILITYCATEGORY:Raging Blood Feat Bloodline				VISIBLE:NO	CATEGORY:Raging Blood Feat Bloodline
+
+
+
+
 #
 # End
 #
