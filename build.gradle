@@ -53,7 +53,7 @@ javafx {
      * command line with "-PlocalOnly=true."
      */
     if (!System.getProperty('idea.active') && !(localOnly.toBoolean())) {
-        configuration = "compileOnly"
+//        configuration = "compileOnly"
     }
 }
 
@@ -906,32 +906,32 @@ dependencyUpdates.resolutionStrategy {
 }
 
 // Support for creating IntelliJ IDEA files.
-idea {
-    project {
-        def javafxLib = file("$projectDir/mods/lib")
-        def files = javafxLib.listFiles( { _, name -> name.contains(".jar") } as FilenameFilter)
-                .toList() // no direct way to convert from Array to Set
-                .toSet()
-
-        def projectLibrary = new ProjectLibrary()
-        projectLibrary.name = "lib"
-        projectLibrary.classes += files
-
-        projectLibraries += [ projectLibrary ]
-    }
-
-    module {
-        testSources.from(project.sourceSets.itest.java.srcDirs,
-                project.sourceSets.slowtest.java.srcDirs)
-
-        iml.withXml {
-            def module = asNode()
-            def component = module.find {it.@name == 'NewModuleRootManager'}
-            def orderEntry = component.appendNode('orderEntry', [ type: 'library', scope: 'RUNTIME', name:'lib', level:'project'])
-        }
-    }
-}
-
+/* idea {
+ *    project {
+ *        def javafxLib = file("$projectDir/mods/lib")
+ *        def files = javafxLib.listFiles( { _, name -> name.contains(".jar") } as FilenameFilter)
+ *                .toList() // no direct way to convert from Array to Set
+ *                .toSet()
+ *
+ *        def projectLibrary = new ProjectLibrary()
+ *        projectLibrary.name = "lib"
+ *        projectLibrary.classes += files
+ *
+ *        projectLibraries += [ projectLibrary ]
+ *    }
+ *
+ *    module {
+ *        testSources.from(project.sourceSets.itest.java.srcDirs,
+ *                project.sourceSets.slowtest.java.srcDirs)
+ *
+ *        iml.withXml {
+ *            def module = asNode()
+ *            def component = module.find {it.@name == 'NewModuleRootManager'}
+ *            def orderEntry = component.appendNode('orderEntry', [ type: 'library', scope: 'RUNTIME', name:'lib', level:'project'])
+ *        }
+ *    }
+ *}
+ */
 // Use the gradle wrapper
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
